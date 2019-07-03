@@ -1,7 +1,19 @@
 body {
-    background-color:red;
+    background-color:#fff;
+}
+td {
+    background-color:lightsteelblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    padding:10px;
+    margin:10px;
+}
+button {
+    float:right;
 }
 
 .burger {
-    margin: 0 auto;
+    margin:0
 }
