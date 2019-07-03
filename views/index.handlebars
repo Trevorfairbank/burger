@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Burger</th>
+                        <th>Devour</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each burgers}}
+                    <tr>
+                        <td>{{this.id}}</td>
+                        <td>{{this.burger_name}}</td>
+                        <td>{{this.devoured}}</td>
+                        <td><button class="btn btn-danger eat-burger" data-id={{this.id}}>DEVOUR!</button></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-12">
+            <form class="burger-form">
+                    <div class="form-group">
+                        <label for="burger-name">Burger: </label>
+                        <input type="burger-name" class="form-control" id="burger-name">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Burger</button>
+            </form>
+        </div>
+    </div>
+</div>
