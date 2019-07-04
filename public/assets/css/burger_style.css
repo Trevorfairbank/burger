@@ -1,19 +1,28 @@
 body {
     background-color:#fff;
 }
-td {
-    background-color:lightsteelblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 li{
+    background-color:lightsteelblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding:10px;
     margin:10px;
 }
-button {
+
+.box-left {
+    float:left;
+}
+.box-right {
+    float:right;
+}
+
+.eat-burger {
     float:right;
 }
 
 .burger {
     margin:0
+}
+.container {
+    align-content: center;
 }

@@ -1,33 +1,49 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-6">
-
-            {{#each burgers}}
-            {{#unless this.devoured}}
-            <div>
-                <li class="notdevoured">{{this.id}}. {{this.burger_name}} # {{this.devoured}}
-                 <button class="btn btn-danger eat-burger" data-id={{this.id}}>DEVOUR!</button></li>
-            </div>
-            {{/unless }}
-
-            {{#if this.devoured}}
-            <div>
-                <li class="devoured">{{this.id}}. {{this.burger_name}} # {{this.devoured}}
-            </div>
-            {{/if }}
-
-            {{/each}}
-
-
-
-        <div class="col-md-12">
-            <form class="burger-form">
-                <div class="form-group">
-                    <label for="burger-name">Burger: </label>
-                    <input type="burger-name" class="form-control" id="burger-name">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit Burger</button>
-            </form>
+        <div class="col-md-6 left-side">
+            <table class="table table-dark table-hover">
+                <tbody>
+                    <tr>
+                        {{#each burgers}}
+                        {{#unless this.devoured}}
+                        <th scope="row"></th>
+                        <td>{{this.burger_name}}</td>
+                        <td><button class="btn btn-danger eat-burger" data-id={{this.id}}>DEVOUR!</button></td>
+                    </tr>
+                    {{/unless }}
+                    {{/each}}
+                </tbody>
+            </table>
         </div>
-    </div>
+
+    <div class="col-md-6 right-side">
+            <table class="table table-dark table-hover">
+                <tbody>
+                    <tr>
+                        {{#each burgers}}
+                        {{#if this.devoured}}
+                        <th scope="row"></th>
+                        <td>{{this.burger_name}}</td>
+                    </tr>
+                    {{/if }}
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+
+</div>
+
+
+
+
+<div class="col-md-12">
+    <form class="burger-form">
+        <div class="form-group">
+            <label for="burger-name">Burger: </label>
+            <input type="burger-name" class="form-control" id="burger-name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Burger</button>
+    </form>
+</div>
+</div>
 </div>
