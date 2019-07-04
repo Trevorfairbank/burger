@@ -1,5 +1,5 @@
 body {
-    background-color:#fff;
+    background-color:lightblue;
 }
 
 li{
@@ -8,12 +8,21 @@ li{
     padding:10px;
     margin:10px;
 }
-
-.box-left {
-    float:left;
+.order-label {
+    color:white;
 }
-.box-right {
-    float:right;
+.header {
+    background-color: #e01835;
+    margin:5px;
+    padding:10px;
+}
+.order {
+   text-align:center;
+}
+
+.row {
+    display:flex;
+    flex-direction:row;
 }
 
 .eat-burger {

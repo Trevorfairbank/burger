@@ -1,6 +1,30 @@
+<div class="container h-100">
+    <div class="row align-items-center h-100 header">
+        <div class="col-4 mx-auto">
+            <form class="burger-form">
+                <div class="form-group">
+                    <label class="order-label" for="burger-name">Order Burger Here: </label>
+                    <input type="burger-name" class="form-control" id="burger-name">
+                </div>
+                <button type="submit" class="btn btn-danger">Submit Burger</button>
+            </form>
+        </div>
+        <div class="col-4 mx-auto">
+            <img src="/assets/img/Burger.png" width="300" height="250">
+        </div>
+    </div>
+</div>
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-6 left-side">
+            <table class="table table-dark table-hover order">
+                <thead>
+                    <th>ORDER IS READY</th>
+                </thead>
+            </table>
+
             <table class="table table-dark table-hover">
                 <tbody>
                     <tr>
@@ -16,7 +40,14 @@
             </table>
         </div>
 
-    <div class="col-md-6 right-side">
+        <div class="col-md-6 right-side">
+
+            <table class="table table-dark table-hover order">
+                <thead>
+                    <th>BURGER HAS BEEN DEVOURED</th>
+                </thead>
+            </table>
+
             <table class="table table-dark table-hover">
                 <tbody>
                     <tr>
@@ -31,19 +62,6 @@
             </table>
         </div>
 
-</div>
+    </div>
 
-
-
-
-<div class="col-md-12">
-    <form class="burger-form">
-        <div class="form-group">
-            <label for="burger-name">Burger: </label>
-            <input type="burger-name" class="form-control" id="burger-name">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit Burger</button>
-    </form>
-</div>
-</div>
 </div>
