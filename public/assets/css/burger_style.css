@@ -1,5 +1,8 @@
 body {
-  background-color: lightblue;
+  background-image: url("../img/burger-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 li {
@@ -12,12 +15,18 @@ li {
   color: white;
 }
 .header {
-  background-color: #e01835;
+  background-color: rgba(0, 0, 0, 0.8);
   margin: 5px;
   padding: 10px;
 }
 .order {
   text-align: center;
+}
+.burger-img {
+  opacity: 0.6;
+}
+.burger-img:hover {
+  opacity: 1;
 }
 
 .row {
@@ -25,8 +34,13 @@ li {
   flex-direction: row;
 }
 
+.table {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .eat-burger {
   float: right;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* .delete-btn {
