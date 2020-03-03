@@ -60,3 +60,19 @@ li {
 .container {
   align-content: center;
 }
+
+@media (max-width: 560px) {
+  .burger-img {
+    opacity: 0.6;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .burger-img {
+    opacity: 0.6;
+    height: 150px;
+    width: 175px;
+  }
+}
