@@ -1,7 +1,7 @@
 body {
   background-image: url("../img/burger-background.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: 180vh;
   background-repeat: no-repeat;
 }
 
