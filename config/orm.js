@@ -1,36 +1,44 @@
 const connection = require("./connection.js");
 
-
 const orm = {
-
-  selectAll: function (table, cb) {
+  selectAll: function(table, cb) {
     const queryString = "SELECT*FROM ??";
     connection.query(queryString, table, (err, result) => {
       if (err) throw err;
       cb(result);
-    })
+    });
   },
 
-
-  insertOne: function (table, item, cb) {
+  insertOne: function(table, item, cb) {
     let queryString = "INSERT INTO ?? SET ?";
 
-    connection.query(queryString,[table,item], (err, result) => {
+    connection.query(queryString, [table, item], (err, result) => {
       if (err) throw err;
       cb(result);
-    })
+    });
   },
 
-  updateOne: function (table, colsToUpdate, id, cb) {
+  updateOne: function(table, colsToUpdate, id, cb) {
     let queryString = "UPDATE ?? SET ? WHERE id = ?";
-    connection.query(queryString,[table,colsToUpdate, id], (err, result) => {
+    connection.query(queryString, [table, colsToUpdate, id], (err, result) => {
       if (err) throw err;
 
       cb(result);
     });
-  }
+  },
 
-}
+  deleteOne: function(table, id, cb) {
+    var queryString = "DELETE FROM ?? WHERE id = ?";
+
+    connection.query(queryString, table, id, function(err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
+  }
+};
 
 // orm.selectAll("burgers", (results) => {
 //   console.log(results);

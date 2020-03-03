@@ -1,37 +1,48 @@
 body {
-    background-color:lightblue;
+  background-color: lightblue;
 }
 
-li{
-    background-color:lightsteelblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding:10px;
-    margin:10px;
+li {
+  background-color: lightsteelblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
+  margin: 10px;
 }
 .order-label {
-    color:white;
+  color: white;
 }
 .header {
-    background-color: #e01835;
-    margin:5px;
-    padding:10px;
+  background-color: #e01835;
+  margin: 5px;
+  padding: 10px;
 }
 .order {
-   text-align:center;
+  text-align: center;
 }
 
 .row {
-    display:flex;
-    flex-direction:row;
+  display: flex;
+  flex-direction: row;
 }
 
 .eat-burger {
-    float:right;
+  float: right;
 }
 
+/* .delete-btn {
+  float: right;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.delete-btn:active {
+  outline: none;
+  appearance: none;
+} */
+
 .burger {
-    margin:0
+  margin: 0;
 }
 .container {
-    align-content: center;
+  align-content: center;
 }
